@@ -1,0 +1,723 @@
+main{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content_login{
+    position: relative;
+    display: grid;
+    height: 60vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 2px  rgb(153, 153, 153);
+}
+
+.tampa_bem_vindo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    width: 35vw;
+    height: 60vh;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(90deg, rgb(144, 39, 214) ,rgb(161, 3, 56)) top left/ 50vw no-repeat ;
+    position: absolute;
+    z-index: 2;
+}
+
+.tampa_bem_vindo_animation_class{
+    animation: tampa_animation 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.tampa_bem_vindo_animation_class_reverse{
+    animation: tampa_animation_reverse 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.tampa_bem_vindo_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tampa_bem_vindo_content_animation_class{
+    animation: tampa_text_bem_vindo_animation 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.tampa_bem_vindo_content_animation_class_reverse{
+    animation: tampa_text_bem_vindo_animation_reverse 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+.tampa_bem_vindo h2{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Open Sans";
+    margin-bottom: 40px;
+   
+}
+
+.tampa_bem_vindo p{
+    color: white;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.tampa_bem_vindo button{
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1em;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.tampa_bem_vindo button:active{
+    border: 2px solid rgb(121, 121, 121);
+    color: rgb(121, 121, 121);
+}
+
+
+.login{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_class_animation{
+    animation: tampa_text_login_animation 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.login_class_animation_reverse{
+    animation: tampa_text_login_animation_reverse 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.login_content{
+    width: 70%;
+    z-index: 4;
+}
+
+.login form{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login form h1{
+    font-family: "Open Sans";
+    font-size: 2em;
+    color: rgb(27, 27, 27);
+    margin-bottom: 20px;
+}
+
+.login form input{
+    padding: 15px 10px;
+    font-size: 1.2;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: rgb(189, 189, 189);
+    border: none;
+    border-radius: 5px;
+}
+.login form input::placeholder{
+    color: rgb(73, 73, 73);
+}
+
+.login form a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(27, 27, 27) ;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.login form a:hover{
+    text-decoration: underline;
+    color: rgb(80, 80, 80) ;
+}
+
+.login form button{
+    background-color: rgb(144, 39, 214);
+    color: white;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.login form button:hover{
+    background-color: rgb(92, 10, 146);
+}
+
+.tampa_cadastro{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    width: 35vw;
+    height: 60vh;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.tampa_cadastro_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(40%);
+    visibility: hidden;
+
+    
+}
+
+.tampa_cadastro_content_class_animation{
+    animation: tampa_text_ola_amigo_animation 1.1s ease-out;
+    animation-fill-mode: forwards; 
+}
+
+.tampa_cadastro_content_class_animation_reverse{
+    animation: tampa_text_ola_amigo_animation_reverse 1.1s ease-out;
+    animation-fill-mode: forwards; 
+}
+
+.tampa_cadastro h2{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Open Sans";
+    margin-bottom: 40px;
+   
+}
+
+.tampa_cadastro p{
+    color: white;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.tampa_cadastro button{
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1em;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.tampa_cadastro button:active{
+    border: 2px solid rgb(121, 121, 121);
+    color: rgb(121, 121, 121);
+}
+
+.cadastro{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: translateX(60%);
+}
+
+.cadastro_class_animation{
+    animation: tampa_text_cadastro_animation 1.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.cadastro_class_animation_reverse{
+    animation: tampa_text_cadastro_animation_reverse 1.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.cadastro_content{
+    width: 70%;
+}
+
+.cadastro div{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro div h1{
+    font-family: "Open Sans";
+    font-size: 2em;
+    color: rgb(27, 27, 27);
+    margin-bottom: 20px;
+    text-align: start;
+    width: 100%;
+}
+
+.cadastro div input{
+    padding: 15px 10px;
+    font-size: 1.2;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: rgb(189, 189, 189);
+    border: none;
+    border-radius: 5px;
+}
+.cadastro div input::placeholder{
+    color: rgb(73, 73, 73);
+}
+
+.cadastro div p{
+    margin-bottom: 30px;
+}
+
+.cadastro div a{
+    background-color: rgb(144, 39, 214);
+    
+    border-radius: 25px;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    align-self: center;
+}
+
+.cadastro div a:hover{
+    background-color: rgb(92, 10, 146);
+}
+
+@keyframes tampa_animation {
+    100%{
+        transform: translateX(100%); 
+        border-radius: 0 10px 10px 0;
+        background-position: top right;
+    }
+}
+
+@keyframes tampa_animation_reverse {
+    0%{
+        transform: translateX(100%); 
+    }
+    100%{
+        transform: translateX(0%); 
+        border-radius: 10px 0 0 10px;
+        background-position: top left;
+    }
+}
+
+@keyframes tampa_text_bem_vindo_animation {
+     0%{
+        transform: translateX(0);
+        visibility: visible;
+     }
+     25%{
+        visibility: hidden; 
+     }
+       
+    100%{
+        transform: translateX(-200%);
+        visibility: hidden; 
+    }
+    
+}
+
+@keyframes tampa_text_bem_vindo_animation_reverse {
+    0%{
+        transform: translateX(-150%);
+        animation-duration: 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    40%{
+        animation-duration: 1.1s;
+        visibility: hidden;
+        opacity: 1;
+    }
+    70%{
+        
+    }
+ 
+   100%{
+       transform: translateX(0%);
+       visibility: visible;
+       opacity: 1; 
+   }
+   
+}
+
+@keyframes tampa_text_ola_amigo_animation {
+    0%{
+        opacity: 0;
+    }
+    
+    30%{
+       visibility: hidden;
+       opacity: 1;
+       
+    }
+      
+   100%{
+       transform: translateX(0%);
+       visibility: visible; 
+       
+   }
+   
+}
+
+@keyframes tampa_text_ola_amigo_animation_reverse {
+    0%{
+        transform: translateX(0);
+        visibility: visible;
+     }
+     40%{
+        visibility: hidden; 
+     }
+       
+    100%{
+        transform: translateX(40%);
+        visibility: hidden;
+    }
+   
+}
+
+@keyframes tampa_text_login_animation {
+    0%{
+       transform: translateX(0);
+       visibility: visible;
+       z-index: 4;
+    }
+    1%{
+        z-index: 1;
+    }
+    30%{
+       visibility: hidden; 
+    }
+      
+   100%{
+       transform: translateX(-100%);
+       visibility: hidden; 
+   }
+   
+}
+
+@keyframes tampa_text_login_animation_reverse {
+    0%{
+        transform: translateX(-70%);
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden; 
+    }
+
+    99.9%{
+        z-index: 1;
+    }
+      
+   100%{
+       transform: translateX(0%);
+       visibility: visible;
+       z-index: 4;
+   }
+   
+}
+
+@keyframes tampa_text_cadastro_animation {
+    20%{
+        visibility: hidden; 
+        
+     }
+       
+    100%{
+        transform: translateX(-1%);
+        visibility: visible; 
+        
+    }
+   
+}
+
+@keyframes tampa_text_cadastro_animation_reverse {
+    0%{
+        transform: translateX(0%);
+        visibility: visible;
+    }
+    40%{
+        visibility: hidden; 
+    }
+      
+   100%{
+       transform: translateX(60%);
+       visibility: hidden; 
+   }  
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 699px) {
+
+    .content_login{
+        height: 70vh;
+        width: 70vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .tampa_bem_vindo{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgb(144, 39, 214) ,rgb(161, 3, 56)) top left/ 100vw no-repeat;
+        border-radius: 10px 10px 0 0;
+    }
+    .tampa_bem_vindo_content{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .login{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login_content{
+        width: 100%;
+    }
+    
+    .login form{
+        margin: 0 auto;
+    }
+
+    .tampa_cadastro{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tampa_cadastro_content{
+        transform: translateY(40%); 
+    }
+    
+    .cadastro{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transform: translateY(60%);
+    }
+
+    @keyframes tampa_animation {
+        100%{
+            transform: translateY(100%); 
+            border-radius: 0 0 10px 10px;
+            background-position: bottom right;
+        }
+    }
+    
+    @keyframes tampa_animation_reverse {
+        0%{
+            transform: translateY(100%); 
+        }
+        100%{
+            transform: translateY(0%); 
+            border-radius: 10px 10px 0 0;
+            background-position: top left;
+        }
+    }
+    
+    @keyframes tampa_text_bem_vindo_animation {
+         0%{
+            transform: translateY(0);
+            visibility: visible;
+         }
+         25%{
+            visibility: hidden; 
+         }
+           
+        100%{
+            transform: translateY(-200%);
+            visibility: hidden; 
+        }
+        
+    }
+    
+    @keyframes tampa_text_bem_vindo_animation_reverse {
+        0%{
+            transform: translateY(-150%);
+            animation-duration: 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+        40%{
+            animation-duration: 1.1s;
+            visibility: hidden;
+            opacity: 1;
+        }
+        70%{
+            
+        }
+     
+       100%{
+           transform: translateY(0%);
+           visibility: visible;
+           opacity: 1; 
+       }
+       
+    }
+    
+    @keyframes tampa_text_ola_amigo_animation {
+        0%{
+            opacity: 0;
+        }
+        
+        30%{
+           visibility: hidden;
+           opacity: 1;
+           
+        }
+          
+       100%{
+           transform: translateY(0%);
+           visibility: visible; 
+           
+       }
+       
+    }
+    
+    @keyframes tampa_text_ola_amigo_animation_reverse {
+        0%{
+            transform: translateY(0);
+            visibility: visible;
+            opacity: 1;
+         }
+         39%{
+            visibility: hidden;
+            opacity: 1;
+         }
+           
+        100%{
+            opacity: 0;
+            transform: translateY(40%);
+            visibility: hidden;
+        }
+       
+    }
+    
+    @keyframes tampa_text_login_animation {
+        0%{
+           transform: translateY(0);
+           visibility: visible;
+           z-index: 4;
+        }
+        1%{
+            z-index: 1;
+        }
+        30%{
+           visibility: hidden; 
+        }
+          
+       100%{
+           transform: translateY(-100%);
+           visibility: hidden; 
+       }
+       
+    }
+    
+    @keyframes tampa_text_login_animation_reverse {
+        0%{
+            transform: translateY(-100%);
+            visibility: hidden;
+        }
+        30%{
+            
+            visibility: hidden; 
+        }
+    
+        99.9%{
+            z-index: 1;
+        }
+          
+       100%{
+           transform: translateY(0%);
+           visibility: visible;
+           z-index: 4;
+       }
+       
+    }
+    
+    @keyframes tampa_text_cadastro_animation {
+        20%{
+            visibility: hidden; 
+            
+         }
+           
+        100%{
+            transform: translateY(-1%);
+            visibility: visible; 
+            
+        }
+       
+    }
+    
+    @keyframes tampa_text_cadastro_animation_reverse {
+        0%{
+            transform: translateY(0%);
+            visibility: visible;
+        }
+        40%{
+            visibility: hidden; 
+        }
+          
+       100%{
+           transform: translateY(60%);
+           visibility: hidden; 
+       }
+    }
+    
+    
+    
+    
+
+    
+}
+
+
+

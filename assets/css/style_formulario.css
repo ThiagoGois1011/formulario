@@ -1,0 +1,238 @@
+header{
+    display: flex;
+    background: linear-gradient(90deg, rgb(144, 39, 214) ,rgb(161, 3, 56)) no-repeat ;
+    padding: 10px;
+    align-items: center;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+header>a{
+    margin-left: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+
+nav svg{
+    fill: black;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav a:nth-child(2){
+    margin-left: 60px;
+}
+
+.barra_espacamento{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    align-self: stretch;
+    margin: 0 2.3em;
+    width: 1px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+main{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;  
+}
+
+.content{
+    width: 40vw;
+    background-color: white;
+    height: 60vh;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 5px rgb(122, 122, 122);
+    font-family: "Open Sans";
+    opacity: 0;
+    transform: translateY(10%);
+    animation: form_animation 0.7s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.content h1{
+    font-size: 1.7em;
+    color: rgb(19, 19, 19);
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.content form div{
+    position: relative;
+    width: 100%;
+}
+
+.div_nome{
+    margin-top: 20px;
+}
+
+.input_form{
+    height: 50px;
+    width: 70%;
+    border: none;
+    border: 2px solid #C8C8C8;
+    outline: none;
+    color: #464646;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.input_form:focus{
+      border: 2px solid #2A7AE4;
+
+}
+
+.content form label{ 
+    padding: 15px 0 0 10px;
+    position: absolute;
+    left: 0;
+    color: #A2A2A2;
+    transform-origin: 0 0;
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.input_form:focus + .label_form,
+.input_form:not(:placeholder-shown) + .label_form{
+    transform: translateY(-7px) scale(0.7);
+    padding-left: 12px;
+    color: #2A7AE4;
+}
+
+.form_button_submit{
+    font-family: "Open Sans";
+    font-size: 1.2em;
+    background-color: rgb(144, 39, 214);
+    border-radius: 20px;
+    border: none;
+    padding: 7px 20px;
+    margin-left: 10px;
+    color: white;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.form_button_submit:hover{
+    background-color: rgb(92, 10, 146);
+}
+
+@keyframes form_animation {
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@media (max-width: 1000px){
+    .content{
+        width: 60vw;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 800px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px){
+
+
+
+    header{
+        display: flex;
+        background: linear-gradient(90deg, rgb(144, 39, 214) ,rgb(161, 3, 56)) no-repeat ;
+        padding: 10px;
+        align-items: stretch;
+        height: auto;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .content{
+        width: 80vw;
+        height: 50vh;
+    }
+    
+    main{
+        height: 80vh;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header>a{
+        align-self: center;
+        margin: 40px 0 20px 0 ;
+        font-size: 2em;
+    }
+    .barra_espacamento{
+        display: none;
+    }
+
+    nav svg{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        fill: black;
+    }
+    
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    nav a:hover{
+        text-decoration: underline;
+    }
+    
+    nav a:nth-child(2){
+        margin-left: 0;
+    }
+    
+}
+
+
+
